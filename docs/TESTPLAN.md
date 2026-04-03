@@ -2,7 +2,7 @@
 
 > 说明：此测试计划用于与业务方确认当前 COBOL 应用的业务行为。测试记录列出“期望结果”，实际执行时请在“实际结果”和“状态”栏填写观察到的内容与通过/不通过结果。
 
-| 测试用例 ID | 测试用例描述 | 前置条件 | 测试步骤 | 期望结果 | 实际结果 | 状态 (通过/不通过) | 备注 |
+| Test Case ID | Test Case Description | Pre-conditions | Test Steps | Expected Result | Actual Result | Status (Pass/Fail) | Comments |
 |---|---|---|---|---|---|---|---|
 | TP-01 | 初始余额验证 | 新启动应用（或重置内存状态），确保 `STORAGE-BALANCE` 为默认值 | 1. 启动应用；2. 选择 “1. View Balance” | 显示余额为 `1000.00`（默认初始值） | | | 验证应用初始状态 |
 | TP-02 | 查看余额功能 | 应用已启动 | 1. 在主菜单选择 1（View Balance） | 显示当前余额，与 DataProgram 中的存储值一致 | | | 覆盖普通查看场景 |
